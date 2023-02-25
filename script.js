@@ -6,9 +6,9 @@ function guess(){
     var randomVal = Math.floor(Math.random() * 10);
     console.log(randomVal);
 
-    if(true){
+    if(currentVal==randomVal){
     let correct = `Congratulations!!! You Guess the Right number`
-    document.getElementById("random").innerHTML = correct;
+    document.getElementById("current").innerHTML = correct;
     
     }
     else{
