@@ -8,6 +8,7 @@
     <title>Game</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -20,26 +21,35 @@
     </nav>
 
 
-    <div class="container m-4">
-        <form class="bg-white rounded pb_form_v1">
-            <h2 class="mb-4 mt-0 text-center">Guess the Number !!!</h2>
+    <!-- <div class="container m-4">
+        <h1>Mid section</h1>
+    </div> -->
+    <div class="container">
+        <div class="center">
+            
+        
+        <div class="container m-4">
+            <form class="bg-white rounded pb_form_v1">
+                <h1 class="mb-4 mt-0 text-center guess">Guess the Number !!!</h1>
+                <div class="form-group">
+                    <input id="text" type="text" class="form-control pb_height-50 reverse" placeholder="Enter the Number">
+                </div>
+            </form>
             <div class="form-group">
-                <input id="text" type="text" class="form-control pb_height-50 reverse" placeholder="Enter the Number">
+                <a onclick="guess()" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue">Submit</a>
             </div>
-        </form>
-        <div class="form-group">
-            <a onclick="guess()" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue">Submit</a>
         </div>
+    
+        <div class="container m-4 out">
+    <h5 id="current"></h5>
+    <h2 id="random"></h2>
+        </div>
+  
     </div>
-
-    <div class="container m-4 out">
-<h5 id="current"></h5>
-<h2 id="random"></h2>
-    </div>
+</div>
 
 
-
-    <footer class="bg-primary p-2 text-center text-light">
+    <footer class="bg-primary p-2 text-center text-light bottom-fixed">
         <h4>Copyright gtn@admin.com</h4>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
